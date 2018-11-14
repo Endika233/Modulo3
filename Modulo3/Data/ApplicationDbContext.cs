@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Modulo3.Models;
 
 namespace Modulo3.Data
 {
@@ -12,5 +13,6 @@ namespace Modulo3.Data
             : base(options)
         {
         }
+        public DbSet<Modulo3.Models.Mamifero> Mamiferos { get; set; }
     }
 }
